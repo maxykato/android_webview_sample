@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">android_webview_sample</string>
+    <string name="search_hint">https://example.com</string>
+</resources>
