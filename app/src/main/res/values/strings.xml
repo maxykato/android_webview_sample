@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">android_webview_sample</string>
     <string name="search_hint">https://example.com</string>
+    <string name="benchmark_text">URL: %1$s\nLoad Time: %2$d ms</string>
 </resources>
