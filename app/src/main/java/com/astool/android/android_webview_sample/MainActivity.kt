@@ -36,12 +36,10 @@ class MainActivity : AppCompatActivity(), CustomWebViewClientDelegate {
         setContentView(R.layout.activity_main)
 
         webView.run {
-            webViewClient = CustomWebViewClient(this@MainActivity)
+            webViewClient = CustomWebViewClient(this@MainActivity, this@MainActivity)
             webChromeClient = CustomWebChromeClient(this@MainActivity)
-            settings.setSupportMultipleWindows(true)
+            setup()
         }
-//        webView.loadUrl("https://www.google.com")
-        webView.loadUrl("http://game.granbluefantasy.jp/")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -54,7 +52,6 @@ class MainActivity : AppCompatActivity(), CustomWebViewClientDelegate {
     }
 
     override fun onPageFinished(view: WebView?, benchmark: Benchmark) {
-        val a = benchmark.loadTime
         benchmarkView.text = this.resources.getString(R.string.benchmark_text, benchmark.url, benchmark.loadTime)
     }
 }
