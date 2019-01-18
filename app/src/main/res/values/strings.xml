@@ -2,4 +2,7 @@
     <string name="app_name">android_webview_sample</string>
     <string name="search_hint">https://example.com</string>
     <string name="benchmark_text">URL: %1$s\nLoad Time: %2$d ms</string>
+    <string name="button_test_webView">Web View Test</string>
+    <string name="button_test_google_sign_in">Google Sign In Test</string>
+    <string name="button_custom_sign_in">Custom Sign In</string>
 </resources>

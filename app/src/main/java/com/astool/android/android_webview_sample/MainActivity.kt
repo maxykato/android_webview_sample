@@ -1,57 +1,31 @@
 package com.astool.android.android_webview_sample
 
-import android.graphics.Color
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.SearchView
-import android.view.Menu
-import android.webkit.WebView
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import java.net.MalformedURLException
-import java.net.URL
 
-
-class MainActivity : AppCompatActivity(), CustomWebViewClientDelegate {
-    private val onQueryTextListener = object : SearchView.OnQueryTextListener {
-        override fun onQueryTextChange(newText: String?): Boolean {
-            // Do nothing.
-            return false
-        }
-
-        override fun onQueryTextSubmit(query: String?): Boolean {
-            val url = try {
-                URL(query).toString()
-            } catch (e: MalformedURLException) {
-                Toast.makeText(applicationContext, "URL is not good ^^", Toast.LENGTH_LONG).show()
-                ""
-            }
-            webView.loadUrl(url)
-            return true
-        }
-    }
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setupBindings()
+    }
 
-        webView.run {
-            webViewClient = CustomWebViewClient(this@MainActivity, this@MainActivity)
-            webChromeClient = CustomWebChromeClient(this@MainActivity)
-            setup()
+    private fun setupBindings() {
+        webViewTestButton.setOnClickListener {
+            present(WebViewActivity::class.java)
+        }
+
+        googleSignInTestButton.setOnClickListener {
+            present(GoogleSignInActivity::class.java)
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.search, menu)
-
-        val searchView = menu?.findItem(R.id.searchView)?.actionView as SearchView
-        searchView.setOnQueryTextListener(onQueryTextListener)
-
-        return true
-    }
-
-    override fun onPageFinished(view: WebView?, benchmark: Benchmark) {
-        benchmarkView.text = this.resources.getString(R.string.benchmark_text, benchmark.url, benchmark.loadTime)
+    private fun <T: Activity> present(clazz: Class<T>) {
+        val intent = Intent(this, clazz)
+        startActivity(intent)
     }
 }

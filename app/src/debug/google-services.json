@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "509246108886",
+    "firebase_url": "https://smooz-c7d83.firebaseio.com",
+    "project_id": "smooz-c7d83",
+    "storage_bucket": "smooz-c7d83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509246108886:android:a3b5b71ad83d2314",
+        "android_client_info": {
+          "package_name": "com.astool.android.android_webview_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509246108886-h4oppfm2sr114kfuseclau2qdq7dc2ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXG4du2_8HiIHX9r9xS-0K8HPp8uh43II"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509246108886:android:ef306b0babf1e74d",
+        "android_client_info": {
+          "package_name": "com.astool.android.smooz_app.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509246108886-0pp4ohd8v4hdndio0gackdip5288lcr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astool.android.smooz_app.free",
+            "certificate_hash": "9085fc684abfc1025caa3d773c0abbb383e9d8eb"
+          }
+        },
+        {
+          "client_id": "509246108886-h4oppfm2sr114kfuseclau2qdq7dc2ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXG4du2_8HiIHX9r9xS-0K8HPp8uh43II"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509246108886-ug0ig49lbhc8h0uas7e4ofc3i37gr6in.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509246108886-dhagu85hmvjob59fhhb7ocf7r1bgu43q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.smoozapp.smooz-debug",
+                "app_store_id": "1151364449"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509246108886:android:0c086cdcd968f9b9",
+        "android_client_info": {
+          "package_name": "com.astool.android.smooz_app.free.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509246108886-c7bs6ju1ldv98gq2tg0sphg3ed9l5t7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astool.android.smooz_app.free.debug",
+            "certificate_hash": "a7501c56d54838c192c18877f8bc8873004308d5"
+          }
+        },
+        {
+          "client_id": "509246108886-h4oppfm2sr114kfuseclau2qdq7dc2ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXG4du2_8HiIHX9r9xS-0K8HPp8uh43II"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509246108886-ug0ig49lbhc8h0uas7e4ofc3i37gr6in.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "509246108886-dhagu85hmvjob59fhhb7ocf7r1bgu43q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.smoozapp.smooz-debug",
+                "app_store_id": "1151364449"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

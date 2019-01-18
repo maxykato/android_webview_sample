@@ -13,16 +13,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/webViewTestButton"
+            android:id="@+id/customSignInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_test_webView" />
+            android:text="@string/button_custom_sign_in" />
 
-        <Button
-            android:id="@+id/googleSignInTestButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_test_google_sign_in" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/originalSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>
